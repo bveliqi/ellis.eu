@@ -25,6 +25,25 @@ $(document).ready(function () {
   })
 
 
+  // ADD Q&A
+
+  qa.forEach(content => {
+
+    let template = `
+      <blockquote class="mb-50">
+        <p>
+            ${content.q}
+        </p>
+        <footer>
+          ${content.a}
+        </footer>
+      </blockquote>
+    `
+
+    $('#qa').append(template)
+  })
+
+
   // ADD MAIL
 
   let username = "info";

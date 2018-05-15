@@ -7,12 +7,6 @@ let news = [
         "date": "23.04.2018"
     },
     {
-        "title": "Artificial intelligence: €20bn investment call from EU commission",
-        "source": "The Guardian",
-        "link": "https://www.theguardian.com/technology/2018/apr/25/european-commission-ai-artificial-intelligence",
-        "date": "24.04.2018"
-    },
-    {
         "title": "European Scientists Call For AI Institute As US and China Pull Away",
         "source": "Forbes",
         "link": "https://www.theguardian.com/technology/2018/apr/25/european-commission-ai-artificial-intelligence",

@@ -52,7 +52,7 @@
 
             The undersigned urge their governments to work towards the above goal.
 
-            <ul>
+            <ul id="participants">
                 <li><b>Francis Bach</b>, Inria, Paris</li>
                 <li><b>Matthias Bethge</b>, University of Tübingen</li>
                 <li><b>Zoubin Ghahramani</b>, Cambridge University</li>
@@ -62,12 +62,6 @@
                 <li><b>Bernhard Schölkopf</b>, Max Planck Institute for Intelligent Systems, Tübingen / Stuttgart</li>
                 <li><b>Yair Weiss</b>, Hebrew University, Jerusalem</li>
                 <li><b>Max Welling</b>, University of Amsterdam</li>
-            </ul>
-
-            We acknowledge (without implying endorsement in detail) a number of individuals</li>
-            who have been crucially involved in discussions pertaining to the present initiative:</li>
-
-            <ul>
                 <li><b>Michael Black</b> (Cyber Valley and Max Planck Institute for Intelligent Systems, Tübingen / Stuttgart)</li>
                 <li><b>Joachim Buhmann</b> (Liaison ETH, Zürich)</li>
                 <li><b>Jean Ponce</b> (Inria and liaison PRAIRIE, Paris)</li>
@@ -83,6 +77,12 @@
     <script src="json/news.js"></script>
     <script src="js/main.js?id=1"></script>
     <!-- JS end -->
+
+    <script>
+        $("#participants li")
+            .sort((a,b) => $(b).text() < ($(a).text()) ? 1 : -1)
+            .appendTo('#participants');
+    </script>
 
 </body>
 

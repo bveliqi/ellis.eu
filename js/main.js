@@ -12,7 +12,7 @@ $(document).ready(function () {
       <blockquote class="mb-50">
         <p>
             <a href="${content.link}" target="_blank">
-                ${content.title}
+                <b>${content.title}</b>
             </a>
         </p>
         <footer>${content.date}
@@ -23,7 +23,6 @@ $(document).ready(function () {
 
     $('#news').append(template)
   })
-
 
   // ADD MAIL
 

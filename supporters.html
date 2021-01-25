@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ELLIS - Initiative to establish a European Lab for Learning & Intelligent Systems</title>
+    <meta charset=utf-8>
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="ELLIS European Lab Machine Learning Learning Systemts Intelligent Systems Artificial Intelligence">
+    <meta name="description" content="ELLIS -Initiative to establish a European Lab for Learning & Intelligent Systems">
+    <meta name="author" content="Behar Veliqi">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon/favicon.ico">
+
+    <!-- CSS -->
+    <!-- REVOSLIDER CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.min.css" media="screen" />
+    <!--  BOOTSTRAP -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--  GOOGLE FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700%7COpen+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS  -->
+    <link rel="stylesheet" href="css/icons-fonts.css">
+    <!--  CSS THEME -->
+    <link rel="stylesheet" href="css/style.css?id=1">
+    <!-- ANIMATE -->
+    <link rel='stylesheet' href="css/animate.min.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <br/>
+
+        <div align="center">
+            <h1>
+                <b>List of Supporters</b>
+            </h1>
+        </div>
+
+        <div class="divider divider-center" style="color:6899e8">
+            <i class="fa fa-circle"></i>
+        </div>
+
+        <p>
+
+            The undersigned urge their governments to work towards the above goal.
+
+            <ul id="participants">
+                <li><b>Francis Bach</b>, Inria, Paris</li>
+                <li><b>Matthias Bethge</b>, University of Tübingen</li>
+                <li><b>Zoubin Ghahramani</b>, Cambridge University</li>
+                <li><b>Thomas Hofmann</b>, ETH Zürich</li>
+                <li><b>Andreas Krause</b>, ETH Zürich</li>
+                <li><b>Cordelia Schmid</b>, Inria, Grenoble</li>
+                <li><b>Bernhard Schölkopf</b>, Max Planck Institute for Intelligent Systems, Tübingen / Stuttgart</li>
+                <li><b>Yair Weiss</b>, Hebrew University, Jerusalem</li>
+                <li><b>Max Welling</b>, University of Amsterdam</li>
+                <li><b>Michael Black</b> (Cyber Valley and Max Planck Institute for Intelligent Systems, Tübingen / Stuttgart)</li>
+                <li><b>Joachim Buhmann</b> (Liaison ETH, Zürich)</li>
+                <li><b>Jean Ponce</b> (Inria and liaison PRAIRIE, Paris)</li>
+            </ul>
+        </p>
+
+    </div>
+
+
+    <!-- JS begin -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="json/news.js"></script>
+    <script src="js/main.js?id=1"></script>
+    <!-- JS end -->
+
+    <script>
+        $("#participants li")
+            .sort((a,b) => $(b).text() < ($(a).text()) ? 1 : -1)
+            .appendTo('#participants');
+    </script>
+
+</body>
+
+</html>
